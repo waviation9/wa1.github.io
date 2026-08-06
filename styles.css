@@ -1,0 +1,67 @@
+body {
+  background-image: url('six.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: "Nevis", sans-serif;
+
+
+} 
+nav {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  padding: 0.5rem 1%; /*increasing the first measurement makes the navbar taller, increasing the second measurement makes the navbar wider */
+  background: rgba(236, 251, 255, 0.156); /* background color */
+  border-top: 2px solid rgba(211, 238, 252, 0.188); /* top border effect */
+  border-bottom: 2px solid rgba(4, 8, 10, 0.188); /* bottom border effect */
+  backdrop-filter: blur(25px); /*blur effect */
+  bottom: 1em; /* how far it is from the bottom of the page */
+  border-radius: 50px; /* rounded corners */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.227);
+  transition: 0.5s ease;
+}
+
+nav:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.182);
+  border-bottom: 2px solid rgba(254, 255, 255, 0.016);
+}
+
+
+.nav-links {
+ 
+  align-items: center;
+  padding: 0.4rem 1rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(167, 242, 255);
+  text-shadow: 0 0 7px rgb(136, 237, 255);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+

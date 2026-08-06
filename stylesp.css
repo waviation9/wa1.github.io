@@ -1,0 +1,36 @@
+body {
+    background-image: url('heap1080.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: "Nevis", sans-serif;
+}
+.panel {
+  
+  /*shape and position*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  /*cosmetic changes*/
+  background: rgba(236, 251, 255, 0.107); /* background color */
+  border-top: 2px solid rgba(211, 238, 252, 0.188); /* top border effect */
+  border-bottom: 2px solid rgba(4, 8, 10, 0.188); /* bottom border effect */
+  backdrop-filter: blur(25px); /*blur effect */
+  border-radius: 40px; /* rounded corners */
+  
+}
+
+p1 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
