@@ -1,9 +1,6 @@
 body {
-    background-image: url('heap1080.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
+    background-color: rgb(7, 0, 136);
+    background-image: linear-gradient(90deg, rgb(82, 77, 178) 0%, rgb(112, 126, 193) 100%);
     font-family: "Nevis", sans-serif;
 }
 
@@ -29,6 +26,32 @@ body {
   
 }
 
+.gridprojects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  gap: 20px;
+  display: auto;  
+}
+
+.gridprojects button {
+  background-color: rgba(236, 251, 255, 0.107);
+  border: 2px solid rgba(211, 238, 252, 0.188);
+  border-radius: 40px;
+  backdrop-filter: blur(25px);
+  text-align: center;
+  padding: 80px;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Nevis", sans-serif;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 45px rgba(254, 252, 252, 0.182);
+  background: rgba(179, 250, 250, 0.299);
+}
+
 p1 {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
@@ -39,4 +62,35 @@ p1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+nav {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  padding: 0.5rem 1%; /*increasing the first measurement makes the navbar taller, increasing the second measurement makes the navbar wider */
+  background: rgba(236, 251, 255, 0.156); /* background color */
+  border-top: 2px solid rgba(211, 238, 252, 0.188); /* top border effect */
+  border-bottom: 2px solid rgba(4, 8, 10, 0.188); /* bottom border effect */
+  backdrop-filter: blur(25px); /*blur effect */
+  bottom: 1em; /* how far it is from the bottom of the page */
+  border-radius: 50px; /* rounded corners */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.227);
+  transition: 0.5s ease;
+}
+
+nav:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.182);
+  border-bottom: 2px solid rgba(254, 255, 255, 0.016);
+}
+
+button {
+  background-color: rgba(236, 251, 255, 0);
+  border: 2px solid rgba(211, 238, 252, 0);
+  border-radius: 40px;
+  text-align: center;
+  padding: 5px;
+  color: rgba(255, 255, 255, 0); 
+  transition: 0.5s ease;
 }
