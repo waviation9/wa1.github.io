@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(7, 0, 136);
-    background-image: linear-gradient(90deg, rgb(82, 77, 178) 0%, rgb(112, 126, 193) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Nevis", sans-serif;
+  background: linear-gradient(to bottom, rgb(5, 16, 80), rgb(39, 1, 93));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: stretch;
+
+  font-family: "Nevis", sans-serif;
 }
 
 @font-face {
@@ -28,12 +29,26 @@ body {
   
 }
 
+h1 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .gridprojects {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 20px;
+  padding: 30px;
   gap: 20px;
   display: auto;  
+  margin: 2em;
+  background: rgba(222, 246, 252, 0.09);
+  backdrop-filter: blur(25px);
+  border-radius: 45px;
+  border-top: 2px solid rgba(211, 238, 252, 0.188); /* top border effect */
+  border-bottom: 2px solid rgba(4, 8, 10, 0.188); /* bottom border effect */
 }
 
 .gridprojects button {
@@ -47,7 +62,19 @@ body {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Nevis", sans-serif;
   transition: 0.5s ease;
+
+
 }
+
+@media (max-width: 1000px) {
+  .gridprojects {
+    display: flex;
+    flex-direction: column;
+  }
+} 
+
+ 
+
 
 button:hover {
   box-shadow: 0 0 45px rgba(254, 252, 252, 0.182);
@@ -66,7 +93,7 @@ p1 {
   transform: translate(-50%, -50%);
 }
 nav {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center; 
   padding: 0.5rem 1%; /*increasing the first measurement makes the navbar taller, increasing the second measurement makes the navbar wider */
